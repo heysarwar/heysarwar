@@ -1,0 +1,33 @@
+//
+// Button
+// --------------------------------------------------
+
+//
+// Btn
+//
+.btn {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #fff;
+  text-decoration: none;
+  -webkit-appearance: none;
+  border: none;
+  border-radius: 5px;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  transition: background-color 0.25s ease-out, color 0.25s;
+
+  // hover & focus
+  &:hover, &:focus {
+    outline: 0;
+    text-decoration: none;
+  }
+}

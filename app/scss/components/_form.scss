@@ -1,0 +1,21 @@
+//
+// Form
+// --------------------------------------------------
+
+//
+// Form Control
+//
+.form-control {
+	display: block;
+	width: 100%;
+	padding: 6px 12px;
+	font-size: 15px;
+	color: $brand-grey-light;
+	line-height: 1.5;
+	background-color: #fff;
+	background-image: none;
+	background-clip: padding-box;
+	border: 1px solid #d1d3d6;
+	border-radius: 5px;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}

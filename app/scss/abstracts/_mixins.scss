@@ -1,0 +1,51 @@
+//
+// Mixins
+// --------------------------------------------------
+
+//
+// Clearfix
+//
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+
+//
+// Reset
+//
+@mixin reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+
+//
+// Placeholder
+//
+@mixin placeholder() {
+  &.placeholder { @content; }
+  &:-moz-placeholder { @content; }
+  &::-moz-placeholder { @content; }
+  &:-ms-input-placeholder { @content; }
+  &::-webkit-input-placeholder { @content; }
+}
+
+
+//
+// Invisible http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+//
+@mixin is-invisible() {
+  position: absolute !important;
+  height: 1px; width: 1px;
+  overflow: hidden;
+  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+  clip: rect(1px, 1px, 1px, 1px);
+}

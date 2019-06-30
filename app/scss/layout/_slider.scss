@@ -1,0 +1,18 @@
+// Slider
+// --------------------------------------------------
+
+//
+// Slick Slider
+//
+.slick-slider {
+  visibility: hidden;
+
+  // slick initialized
+  &.slick-initialized {visibility: visible;}
+
+  // slick slide
+  .slick-slide {outline: none;}
+
+  // a
+  a {&:focus {outline: 0;}}
+}
